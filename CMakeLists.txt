@@ -21,6 +21,8 @@ add_executable(unfolding
   net.cpp
   neuron.cpp
   neuron.h
+  simple_psd.h
+  simple_psd.cpp
   simple_ann.h
   simple_ann.cpp
   qcustomplot.cpp

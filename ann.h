@@ -5,13 +5,13 @@
 #include "connection_ann.h"
 #include "net.h"
 #include "neuron.h"
-#include "simple_ann.h"
+#include "simple_psd.h"
 
 class ann_simple {
  public:
   ann_simple(){;};
   void runNet(QString fname) {
-    SimpleAnn trainData(fname.toStdString());
+    SimpleAnnPSD trainData(fname.toStdString());
     rerror.clear();
     error.clear();
     exData.clear();

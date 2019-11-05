@@ -5,13 +5,7 @@
 #include "ui_multiunfold.h"
 #include <QMainWindow>
 #include <QFutureWatcher>
-//#include <QtConcurrent>
-#include "connection.h"
-#include "neuron.h"
-#include <random>
-#include "net.h"
-#include "trainingdata.h"
-
+#include "ann.h"//#include <QtConcurrent>
 class MultiUnfold : public QMainWindow
 {
 	Q_OBJECT
@@ -27,13 +21,8 @@ private:
 	static void runNet(MultiUnfold* pt);
 	void Test();
 
-	QVector<int> result;
-	QVector<double> error, rerror;
-	QVector<double> sample, unfolded, NNunfolded;
-	QVector<double> rxData;
-	QVector<double> exData;
 	QList<QCustomPlot*>* plots;
-	Net * NNet;
+	ann * NNet;
 	QFutureWatcher<void> *fwatcher;
 private slots:
 	void on_pbTrain_clicked();

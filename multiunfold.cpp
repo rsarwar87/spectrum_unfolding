@@ -29,7 +29,7 @@ void MultiUnfold::on_pbTrain_clicked()
 
 	ui.lineEdit->setText(file1Name);
 
-	NNet = new ann();
+	NNet = new ann_simple();
 	NNet->runNet(file1Name);
   emit readytoPlot(1);
 	//QtConcurrent::run(&MultiUnfold::runNet, this);

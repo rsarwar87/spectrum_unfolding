@@ -22,7 +22,7 @@ private:
 	void Test();
 
 	QList<QCustomPlot*>* plots;
-	ann * NNet;
+	ann_simple * NNet;
 	QFutureWatcher<void> *fwatcher;
 private slots:
 	void on_pbTrain_clicked();

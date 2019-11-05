@@ -1,6 +1,6 @@
 #ifndef NEURON_H
 #define NEURON_H
-#include "connection.h"
+#include "connection_ann.h"
 #pragma once
 class Neuron;
 typedef std::vector<double> t_vals;

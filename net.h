@@ -1,6 +1,6 @@
 #ifndef NET_H
 #define NET_H
-#include "connection.h"
+#include "connection_ann.h"
 #include "neuron.h"
 #pragma once
 class Net

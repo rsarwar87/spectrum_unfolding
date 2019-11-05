@@ -16,13 +16,13 @@ find_package(Qt5 COMPONENTS Widgets PrintSupport Concurrent REQUIRED)
 
 add_executable(unfolding
   main.cpp
-  connection.h
+  connection_ann.h
   net.h
   net.cpp
   neuron.cpp
   neuron.h
-  trainingdata.h
-  trainingdata.cpp
+  simple_ann.h
+  simple_ann.cpp
   qcustomplot.cpp
   qcustomplot.h
   multiunfold.cpp

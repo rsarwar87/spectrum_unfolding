@@ -1,6 +1,6 @@
-#include "trainingdata.h"
+#include "simple_ann.h"
 
-void TrainingData::getTopology(std::vector<unsigned> &topology)
+void SimpleAnn::getTopology(std::vector<unsigned> &topology)
 {
     std::string line;
     std::string label;
@@ -21,12 +21,12 @@ void TrainingData::getTopology(std::vector<unsigned> &topology)
     return;
 }
 
-TrainingData::TrainingData(const std::string filename)
+SimpleAnn::SimpleAnn(const std::string filename)
 {
     m_trainingDataFile.open(filename.c_str());
 }
 
-unsigned TrainingData::getNextInputs(t_vals &inputVals)
+unsigned SimpleAnn::getNextInputs(t_vals &inputVals)
 {
     inputVals.clear();
 
@@ -47,7 +47,7 @@ unsigned TrainingData::getNextInputs(t_vals &inputVals)
     return inputVals.size();
 }
 
-unsigned TrainingData::getTargetOutputs(t_vals &targetOutputVals)
+unsigned SimpleAnn::getTargetOutputs(t_vals &targetOutputVals)
 {
     targetOutputVals.clear();
 

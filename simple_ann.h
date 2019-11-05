@@ -1,15 +1,15 @@
 #ifndef TRAININGDATA_H
 #define TRAININGDATA_H
-#include "connection.h"
+#include "connection_ann.h"
 
 class Neuron;
 typedef std::vector<double> t_vals;
 typedef std::vector<Connection> Connections;
 typedef std::vector<Neuron> Layer;
-class TrainingData
+class SimpleAnn
 {
 public:
-    TrainingData(const std::string filename);
+    SimpleAnn(const std::string filename);
     bool isEof(void) { return m_trainingDataFile.eof(); }
     void getTopology(std::vector<unsigned> &topology);
 

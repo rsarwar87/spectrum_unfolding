@@ -2,16 +2,16 @@
 #define ANN
 
 #include <random>
-#include "connection.h"
+#include "connection_ann.h"
 #include "net.h"
 #include "neuron.h"
-#include "trainingdata.h"
+#include "simple_ann.h"
 
-class ann {
+class ann_simple {
  public:
-  ann(){;};
+  ann_simple(){;};
   void runNet(QString fname) {
-    TrainingData trainData(fname.toStdString());
+    SimpleAnn trainData(fname.toStdString());
     rerror.clear();
     error.clear();
     exData.clear();

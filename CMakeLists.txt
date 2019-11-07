@@ -30,4 +30,6 @@ add_executable(unfolding
   multiunfold.ui
 )
 
+add_executable(createTransfer createTransfer.cpp)
+
 target_link_libraries(unfolding PRIVATE Qt5::Widgets)

@@ -73,7 +73,6 @@ void Net::backProp(const t_vals &targetVals)
         double delta = targetVals[n] - outputLayer[n].getOutputVal();
         m_error += delta * delta;
     }
-    m_error *= m_error; // get error squared
     m_error /= (outputLayer.size() - 1); // get average error squared
     m_error = sqrt(m_error); // RMS
 
